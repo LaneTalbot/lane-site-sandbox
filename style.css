@@ -1,30 +1,36 @@
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f7f7;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #222;
-  text-align: center;
+  color: #111;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  align-items: center;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  font-weight: 600;
-  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
-a {
-  text-decoration: none;
-  color: #0056b3;
-  transition: color 0.2s ease;
-}
-
-a:hover {
+.nav-right a {
   color: #003366;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.tagline {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+  padding: 1.5rem;
 }
 
 hr {
@@ -36,10 +42,14 @@ hr {
 .socials {
   padding: 1rem;
   font-size: 1rem;
+  text-align: center;
 }
 
 .socials a {
   margin: 0 1rem;
+  color: #0056b3;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .grid {
@@ -47,17 +57,24 @@ hr {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .box {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 2rem;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   border: 1px solid #ddd;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: 600;
+  color: #003366;
+  text-decoration: none;
+  text-align: center;
 }
 
 .box:hover {
-  transform: scale(1.02);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
